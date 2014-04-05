@@ -119,3 +119,84 @@ public class Calculater extends javax.swing.JFrame {
 		show = new JTextField();
 		p2.add(show, BorderLayout.NORTH);
 		p2.add(p1, BorderLayout.CENTER);
+
+		b1.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "1";
+				show.setText(number1);
+			}
+
+		});
+		b2.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "2";
+				show.setText(number1);
+			}
+
+		});
+		b3.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "3";
+				show.setText(number1);
+			}
+
+		});
+		b4.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "4";
+				show.setText(number1);
+			}
+
+		});
+		b5.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "5";
+				show.setText(number1);
+			}
+
+		});
+		b6.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "6";
+				show.setText(number1);
+			}
+
+		});
+		b7.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "7";
+				show.setText(number1);
+			}
+
+		});
+		b8.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "8";
+				show.setText(number1);
+			}
+
+		});
+		b9.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "9";
+				show.setText(number1);
+			}
+
+		});
+		b0.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += "0";
+				show.setText(number1);
+			}
+
+		});
