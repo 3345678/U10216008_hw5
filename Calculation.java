@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.*;
 
 public class Calculater extends javax.swing.JFrame {
 	private String number1 = "";
@@ -416,3 +417,29 @@ public class Calculater extends javax.swing.JFrame {
 		});
 
 	}
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		String x;
+		int i;
+
+		System.out.print("Enter the Password¡G");
+		x = in.readLine();
+		if (!(x.equals("0000"))) {
+			System.out.println("I Fuck You !!");
+
+		}
+		else 
+			
+		try {
+			Calculater frame = new Calculater();
+			frame.setSize(500, 400);
+			frame.setLocationRelativeTo(null);
+			frame.setVisible(true);
+		} catch (Exception e) {
+
+		}
+
+	}
+
+}
