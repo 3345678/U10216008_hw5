@@ -200,3 +200,219 @@ public class Calculater extends javax.swing.JFrame {
 			}
 
 		});
+		spot.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				number1 += ".";
+				show.setText(number1);
+			}
+
+		});
+
+		plus.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+
+					Sum = Double.parseDouble(number1);
+					show.setText("");
+					number1 = "";
+
+				} catch (Exception a) {
+
+				}
+
+				equal.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						try {
+							Sum += Double.parseDouble(number1);
+							show.setText(Sum + "");
+							number1 = "";
+						} catch (Exception a) {
+
+						}
+					}
+				});
+			}
+
+		});
+
+		subtract.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Sum = Double.parseDouble(number1);
+					show.setText(Sum + "");
+					number1 = "";
+
+				} catch (Exception a) {
+
+				}
+
+				equal.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						try {
+							Sum -= Double.parseDouble(number1);
+							show.setText(Sum + "");
+							number1 = "";
+						} catch (Exception a) {
+
+						}
+					}
+				});
+			}
+
+		});
+		multiplication.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+
+					Sum = Double.parseDouble(number1);
+					show.setText("");
+					number1 = "";
+
+				} catch (Exception a) {
+
+				}
+
+				equal.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						try {
+							Sum *= Double.parseDouble(number1);
+							show.setText(Sum + "");
+							number1 = "";
+						} catch (Exception a) {
+
+						}
+					}
+				});
+			}
+
+		});
+		division.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+
+					Sum = Double.parseDouble(number1);
+					show.setText("");
+					number1 = "";
+
+				} catch (Exception a) {
+
+				}
+
+				equal.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						try {
+							Sum /= Double.parseDouble(number1);
+							show.setText(Sum + "");
+							number1 = "";
+						} catch (Exception a) {
+
+						}
+					}
+				});
+			}
+
+		});
+		c.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Sum = 0;
+				number1 = "";
+				show.setText("");
+			}
+
+		});
+		sin.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Sum = Double.parseDouble(show.getText());
+					show.setText(Math.sin(Sum) + "");
+				} catch (Exception b) {
+
+				}
+			}
+
+		});
+		cos.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Sum = Double.parseDouble(show.getText());
+					show.setText(Math.cos(Sum) + "");
+				} catch (Exception b) {
+
+				}
+			}
+
+		});
+		tan.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Sum = Double.parseDouble(show.getText());
+					show.setText(Math.tan(Sum) + "");
+				} catch (Exception b) {
+
+				}
+			}
+
+		});
+		log.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Sum = Double.parseDouble(show.getText());
+					show.setText(Math.log10(Sum) + "");
+				} catch (Exception b) {
+
+				}
+			}
+
+		});
+		naturalLog.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Sum = Double.parseDouble(show.getText());
+					show.setText(Math.log(Sum) + "");
+				} catch (Exception b) {
+
+				}
+			}
+
+		});
+		root.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Sum = Double.parseDouble(show.getText());
+					show.setText(Math.sqrt(Sum) + "");
+				} catch (Exception b) {
+
+				}
+			}
+
+		});
+		square.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Sum = Double.parseDouble(show.getText());
+					show.setText(Math.pow(Sum, 2) + "");
+				} catch (Exception b) {
+
+				}
+			}
+
+		});
+
+	}
