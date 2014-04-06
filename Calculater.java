@@ -4,6 +4,8 @@ import java.awt.event.*;
 import java.io.*;
 
 public class Calculater extends javax.swing.JFrame {
+
+        //Object for use
 	private String number1 = "";
 
 	private JButton b1;
@@ -35,7 +37,9 @@ public class Calculater extends javax.swing.JFrame {
 	private JTextField show;
 	private static double Sum = 0;
 
+        //Constructor
 	public Calculater() {
+                //Set the GUI
 		super("Calculater");
 		this.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
 		p1 = new JPanel();
@@ -116,11 +120,14 @@ public class Calculater extends javax.swing.JFrame {
 		p2 = new JPanel();
 		p2.setLayout(new BorderLayout());
 		this.setContentPane(p2);
-
+                
 		show = new JTextField();
+
+                //Set the direction of the panel and textfield
 		p2.add(show, BorderLayout.NORTH);
 		p2.add(p1, BorderLayout.CENTER);
-
+ 
+                //ActionListener for using method.
 		b1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -418,11 +425,14 @@ public class Calculater extends javax.swing.JFrame {
 
 	}
 
+        //Main method
 	public static void main(String[] args) throws IOException {
+                //Code for setting the password 0000
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		String x;
 		int i;
-
+                
+                //Judge the password
 		System.out.print("Enter the Password¡G");
 		x = in.readLine();
 		if (!(x.equals("0000"))) {
